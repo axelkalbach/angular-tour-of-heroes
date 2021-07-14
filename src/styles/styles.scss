@@ -1,8 +1,8 @@
 /* Application-wide Styles */
 h1 {
-  color: rgb(40, 92, 20);
-  font-family: Verdana;
-  font-size: 250%;
+  color: rgb(182, 53, 36);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10000000%;
   }
 h2, h3 {
   color: #444;
@@ -19,4 +19,9 @@ body, input[type="text"], button {
 /* everywhere else */
 * {
   font-family: Verdana;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Verdana; 
+  background-color: rgb(202, 202, 202);
+  text-align: center;
 }

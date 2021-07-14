@@ -2,22 +2,24 @@
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
-    width: 15em;
+    display: inline-block;
   }
   .heroes li {
     cursor: pointer;
     position: relative;
     left: 0;
-    background-color: #EEE;
+    background-color: rgb(119, 119, 119);
     margin: .5em;
     padding: .3em 0;
-    height: 1.6em;
+    height: 390px;
     border-radius: 4px;
+    width: 350px;
+    display: inline-block;
   }
   .heroes li:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
-    left: .1em;
+    bottom: .1em;
   }
   .heroes li.selected {
     background-color: black;
@@ -35,17 +37,42 @@
     display: inline-block;
     font-size: small;
     color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color:#405061;
+    padding: 6px;
+    background-color:#33924b;
     line-height: 1em;
     position: relative;
-    left: -1px;
-    top: -4px;
-    height: 1.8em;
+    top: -1px;
+    height: 13px;
     margin-right: .8em;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+  .delete {
+    height: 25px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  .names {
+    height: 25px;
+    width: 200px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center; 
+  }
+  .add-button { 
+    margin-left: 10px;
   }
   
   input {
     padding: .5rem;
+  }
+  img {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }

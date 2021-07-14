@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { Hero } from '../hero';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -11,11 +11,11 @@ import { HeroService } from '../hero.service';
 })
 export class HeroDetailComponent implements OnInit {
 
-  @Input() hero?: Hero;
+  @Input() hero: Hero = {id: 0, name: ''};
 
   constructor(
     private route: ActivatedRoute,
-    private heroService: HeroService,
+    public heroService: HeroService,
     private location: Location
   ) {}
 
@@ -39,5 +39,4 @@ export class HeroDetailComponent implements OnInit {
         .subscribe(() => this.goBack());
     }
   }
-
 }

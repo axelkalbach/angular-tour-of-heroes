@@ -2,17 +2,12 @@ h2 {
     color: #A80000;
     font-family: Verdana;
     font-weight: lighter;
+    padding-top: 20px;
   }
   
   .clear {
-    color: #333;
-    background-color: #eee;
     margin-bottom: 12px;
     padding: 1rem;
     border-radius: 4px;
     font-size: 1rem;
-  }
-  .clear:hover {
-    color: white;
-    background-color: #42545C;
   }
