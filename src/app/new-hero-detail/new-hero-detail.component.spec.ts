@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashboardComponent } from './dashboard.component';
+import { NewHeroDetailComponent } from './new-hero-detail.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-describe('DashboardComponent', () => {
-  let component: DashboardComponent;
-  let fixture: ComponentFixture<DashboardComponent>;
+describe('NewHeroDetailComponent', () => {
+  let component: NewHeroDetailComponent;
+  let fixture: ComponentFixture<NewHeroDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ],
+      declarations: [ NewHeroDetailComponent ],
       imports: [
         HttpClientTestingModule,
         RouterTestingModule
@@ -20,7 +20,7 @@ describe('DashboardComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DashboardComponent);
+    fixture = TestBed.createComponent(NewHeroDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
